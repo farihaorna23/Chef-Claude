@@ -61,6 +61,26 @@ form{
   transform: scale(1.2);
 } 
 
+/* List */
+.ingredient-list-container{
+  margin-top: 60px;
+  margin-left: 100px;
+}
+
+
+.list-title{
+  font-size: 2.5rem;
+  font-weight: 500;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+li{
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  margin-left: 25px;
+}
+
 /* For small screen */
 /* For Mobile Screen */
 @media (max-width: 576px){
