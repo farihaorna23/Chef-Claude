@@ -10,7 +10,8 @@ const Form = () => {
     setIngredient(e.target.value)
   }
 
-  let addIngredient = () => {
+  let addIngredient = (e) => {
+    e. preventDefault()
     if(ingredient.trim() != ""){
       setIngredientList (prevList => [...prevList,ingredient])
       setIngredient("")
@@ -20,7 +21,7 @@ const Form = () => {
   return (
     <>
     <div className="form-container">
-    <form>
+    <form onSubmit={addIngredient}>
       <label>
         <input placeholder="e.g onion" 
         className="form-input" 
