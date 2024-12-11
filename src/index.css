@@ -28,28 +28,28 @@ nav > span {
 
 /* Form */
 .form-container{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin-top: 100px;
+  width: 90%;
+  max-width: 950px;
+  margin: 100px auto;
 }
 
 form{
-  width: 65%;
+  width: 100%;
 }
 
 .form-input{
-  width: 100%;
+  width: 65%;
   height: 100%;
+  padding: 10px 0;
   border-radius: 5px;
 }
 
 .add-btn{
   background-color: black;
-  width: 15%;
+  width: 20%;
   color: white;
   text-align: center;
-  padding: 8px 10px;
+  padding: 10px 10px;
   border-radius: 5px;
   margin-left: 15px;
   cursor: default;
@@ -92,12 +92,8 @@ li{
     margin-top: 100px;
   }
   
-  form{
-    width: 60%;
-  }
-  
   .form-input{
-    width: 100%;
+    width: 65%;
     height: 100%;
   }
   
@@ -106,7 +102,7 @@ li{
     color: white;
     text-align: center;
     font-size: 0.6rem;
-    padding: 8px 10px;
+    padding: 6px 10px;
     border-radius: 5px;
     margin-left: 15px;
   }
