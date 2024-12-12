@@ -85,7 +85,7 @@ li{
 /* Get recipe section */
 .get-recipe-container{
   width: 90%;
-  max-width: 1080px;
+  max-width: 1400px;
   margin: 60px auto;
   background-color: #F0EBE3;
   display: flex;
@@ -162,6 +162,20 @@ li{
   font-size: 1rem;
   margin-bottom: 18px;
   margin-left: 25px;
+}
+
+.get-recipe-text > span{
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.get-recipe-text > p{
+  font-size: 0.8rem;
+  color: grey;
+}
+
+.generateBtn{
+  font-size: 0.8rem;
 }
 }
 
