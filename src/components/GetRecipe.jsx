@@ -1,4 +1,17 @@
+import {getRecipeFromMistral} from "../ai.js"
+import {useState} from "react"
+import Recipe from "./Recipe"
+
 const GetRecipe = (props) => {
+
+  let [recipe, setRecipe] = useState("")
+
+  const getRecipe = async() => {
+    //will return recipe as markdown
+    const markdownRecipe = await getRecipeFromMistral(props.ingredientList)
+    setRecipe(markdownRecipe)
+  }
+
   return(
   <>
   {
@@ -8,10 +21,11 @@ const GetRecipe = (props) => {
           <span>Ready for a recipe?</span>
           <p>Generate a recipe from your list of ingredients.</p>
     </div>
-    <button className="generateBtn">Get a recipe</button>
+    <button className="generateBtn" onClick={getRecipe}>Get a recipe</button>
     </div>
     ) : null
    }
+   {recipe && <Recipe recipe={recipe}/>}
 </>
   )
 }

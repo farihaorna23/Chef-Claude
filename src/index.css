@@ -120,6 +120,17 @@ li{
 transform: scale(1.2);
 }
 
+/* Recipe */
+.recipe-container{
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
+  color: #475467;
+  line-height: 40px;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
 /* For small screen */
 /* For Mobile Screen */
 @media (max-width: 576px){
@@ -176,6 +187,12 @@ li{
 
 .generateBtn{
   font-size: 0.8rem;
+}
+
+/* Recipe */
+.recipe-container{
+  line-height: 40px;
+  font-size: 1.2rem;
 }
 }
 

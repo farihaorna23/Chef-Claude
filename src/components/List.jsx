@@ -16,7 +16,7 @@ const List = (props) => {
   </section>  
   }
   <section>
-  <GetRecipe total={props.ingredientList.length}/>
+  <GetRecipe total={props.ingredientList.length} ingredientList={props.ingredientList}/>
   </section>
   </>
   )
